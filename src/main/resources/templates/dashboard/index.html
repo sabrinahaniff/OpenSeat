@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard - OpenSeat</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div th:replace="~{fragments/nav :: nav}"></div>
+
+<div class="container py-5">
+    <h1 class="mb-4">Dashboard</h1>
+    <p>Welcome to OpenSeat. Use the navigation bar to browse courses, manage your watchlist, and view alerts.</p>
+
+    <div class="row g-4 mt-2">
+        <div class="col-md-4">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h5>Browse courses</h5>
+                    <p>See seeded course availability data.</p>
+                    <a class="btn btn-primary" th:href="@{/courses}">View Courses</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h5>Manage watchlist</h5>
+                    <p>Add or remove courses you care about.</p>
+                    <a class="btn btn-outline-primary" th:href="@{/watchlist}">Open Watchlist</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h5>See alerts</h5>
+                    <p>View recent course opening alerts.</p>
+                    <a class="btn btn-outline-dark" th:href="@{/alerts}">View Alerts</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
