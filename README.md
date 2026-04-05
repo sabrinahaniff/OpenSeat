@@ -83,7 +83,5 @@ Use the seeded demo accounts below after starting the app:
 
 ---
 
-## Screenshots
-
 
 
